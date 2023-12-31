@@ -1,0 +1,81 @@
+.header {
+  position: relative;
+  z-index: 1; /* Ensure Navbar is above other content */
+  width: 100%;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2; /* Ensure Navbar is above other content */
+  display: flex;
+  align-items: center;
+  background-color: #343a40; /* Change the background color as needed */
+  padding: 1rem; /* Adjust padding as needed */
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 1cm; /* Adjust spacing between list items */
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+section{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Other styles remain unchanged */
+
+/* Optional: Add styles for the content area to avoid overlap */
+.content {
+  position: relative;
+  z-index: 0;
+}
+
+/* .header{
+  display: flex;
+
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.navbar ul{
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li{
+  margin-left: .5cm;
+}
+
+
+.icons{
+  color: white;
+  
+}
+
+
+
+/* carousal */
+
+/* .link{
+  color: white;
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}  */
