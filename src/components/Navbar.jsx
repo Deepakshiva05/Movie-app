@@ -12,6 +12,8 @@ import './navbar.css';
 import Moviedetail from './Moviedetail';
 import Tvdetail from './detailpages/Tvdetail';
 import Topdetail from './detailpages/Topdetail';
+import Login from './Login';
+import Signup from './signup';
 
 const Navbar = () => {
   const [expanded, setExpanded] = useState(false);
@@ -29,7 +31,7 @@ const Navbar = () => {
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container">
-            <Link to="/" className="navbar-brand text-danger">NETFLIX</Link>
+            <Link to="/" className="navbar-brand text-danger">CINE<span className='text-light'>CRAFT</span></Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -63,7 +65,8 @@ const Navbar = () => {
               <div className="icons flex-nowrap">
                 <IoMdSearch className="me-3" />
                 <FaRegBell className="me-3" />
-                <button className="btn btn-danger">Sign in</button>
+                <button className="btn btn-danger"><Link to="/signin" className='text-white text-decoration-none '>Sign in</Link></button>
+                
               </div>
             </div>
           </div>
@@ -71,10 +74,13 @@ const Navbar = () => {
 
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path='/home' element={<Home/>}></Route>
           <Route path="/tvshows" element={<Tvshows />} />
           <Route path="/movies" element={<Movies />} />
           <Route path="/popular" element={<MovieListTop />} />
           <Route path="/list" element={<List />} />
+          <Route path='/signin' element={<Login/>}></Route>
+          <Route path='/signup' element={<Signup/>}></Route>
           <Route path="/Moviedetail/:id" element={<Moviedetail />} />
           <Route path="/Tvdetail/:id" element={<Tvdetail/>}></Route>
           <Route path="/Topdetail/:id" element={<Topdetail/>}></Route>

@@ -1,0 +1,29 @@
+#logmain{
+    min-height: 70vh
+}
+
+#log{
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+  
+#text1,#text2,#text3,#text4{
+    height: 1cm;
+    width: 7cm;
+    margin-bottom: 10px;
+}
+
+section{
+    
+    
+
+}
+
+#lok{
+    height: 15cm;
+}

@@ -1,0 +1,25 @@
+.trailer{
+    position: absolute;
+    min-height: 40vh;
+    margin-top: 2cm;
+    background-color:rgba(0, 0, 0, 0.8); ;
+    padding: 1cm;
+    min-width: auto;
+    border-radius: 10px;
+    visibility: hidden;
+    border: 2px solid white;
+}
+
+#close{
+    position: absolute;
+    font-size: 40px;
+    margin-top: -0.7cm;
+    right: 0.5cm;
+    cursor: pointer;
+}
+
+@media screen and (max-width:786px) {
+    .trailer{
+        width: max-content;
+    }
+}
